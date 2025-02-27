@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Globalization;
+using Microsoft.Win32.SafeHandles;
 
 namespace Cilindro
 {
@@ -14,9 +14,17 @@ namespace Cilindro
             double r = double.Parse(Console.ReadLine());
 
             // Calc do volume
-            double V = Math.PI * Math.Pow(r,2) * a;
+            double V = Math.PI * Math.Pow(r, 2) * a;
 
-            Console.WriteLine(string.Format(CultureInfo.InvariantCulture, "{0:F3}", V));
+            // Calc da Area da superficie
+            double Sa = 2 * Math.PI * r * (r + a);
+
+            // Imprimir o Volume do cilindro
+            // Testei com os valores 5 (altura) e 10 (raio)... o valor é arredondado...
+            Console.WriteLine(V.ToString("0.000"));
+
+            // Imprimir area da superfice do cilindro
+            Console.WriteLine(Sa.ToString("0.000"));
 
         }
     }
