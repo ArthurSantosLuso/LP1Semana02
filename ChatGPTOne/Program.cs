@@ -7,7 +7,8 @@ namespace ChatGPTOne
     {
         private static void Main(string[] args)
         {
-            while (true)
+            bool leave = false;
+            while (!leave)
             {
                 string resposta = "";
 
@@ -33,7 +34,18 @@ namespace ChatGPTOne
                     case "Porque o mundo é uma bola?":
                         resposta = "A terra é plana.";
                         break;
+
+                    case "EXIT":
+                        leave = true;
+                        break;
+
+                    default:
+                        resposta = @"Desculpa, meu criador não é muito inteligente
+e nao sei responder a essa questão.";
+                        break;
+
                 }
+                Console.WriteLine(resposta);
             }
         }
     }
