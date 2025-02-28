@@ -34,6 +34,7 @@ namespace PerfectCountdown
                 // Cicle to print step by step till 0
                 for (int aux = valorInicio; aux >= 0; aux--)
                 {
+                    // Verificcation to make sure the next number is a step
                     if (aux % valorStep != 0)
                     {
                         continue;
