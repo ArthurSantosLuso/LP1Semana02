@@ -18,15 +18,18 @@ namespace PerfectCountdown
                 Console.Write("Step number: ");
                 valorStep = int.Parse(Console.ReadLine());
 
-                // Verify if the numbers are compatible
+                // Verify if the numbers are not compatible
                 if (valorInicio < 2 || valorStep < 2 || valorStep >= valorInicio)
                 {
+                    // Throw the error message
                     Console.WriteLine("Out-of-range start or step. Try again.");
                     continue;
                 }
 
+                // verify if the 'valorInicio' is not divisible by 'valorStep'
                 if (valorInicio % valorStep != 0)
                 {
+                    // Throw the error message
                     Console.WriteLine("Start not divisible by step. Try again.");
                     continue;
                 }
@@ -41,6 +44,7 @@ namespace PerfectCountdown
                     }
                     else
                     {
+                        // Is is a step, then print it
                         Console.WriteLine(aux);
                     }
 
