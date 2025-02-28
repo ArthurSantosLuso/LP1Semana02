@@ -52,6 +52,12 @@ namespace ValoresEspeciais
         //Imprimir o resultado do overflow do tipo unit
         Console.WriteLine(a + 1);
 
+        // Declarar um var com o valor maximo do tipo float
+        float b = float.MaxValue;
+
+        //Imprimir o resultado do overflow do tipo float
+        Console.WriteLine(b + 1);
+
         }
     }
 }
