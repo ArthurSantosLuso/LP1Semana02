@@ -62,6 +62,13 @@ namespace ValoresEspeciais
         float overflowNegative = b * 2;
         Console.WriteLine(overflowNegative);
 
+        // Underflow floats
+        b = float.MinValue / 2;
+        Console.WriteLine(b);
+
+        b = float.MaxValue / 2;
+        Console.WriteLine(b);
+
         }
     }
 }
