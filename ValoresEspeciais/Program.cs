@@ -7,61 +7,43 @@ namespace ValoresEspeciais
         private static void Main(string[] args)
         {
         // Variáveis inteiras
-        sbyte sbyteMin = sbyte.MinValue;
-        sbyte sbyteMax = sbyte.MaxValue;
-        Console.WriteLine(sbyteMin);
-        Console.WriteLine(sbyteMax);
+        Console.WriteLine(sbyte.MinValue);
+        Console.WriteLine(sbyte.MaxValue);
 
-        byte byteMin = byte.MinValue;
-        byte byteMax = byte.MaxValue;
-        Console.WriteLine(byteMin);
-        Console.WriteLine(byteMax);
+        Console.WriteLine(byte.MinValue);
+        Console.WriteLine(byte.MaxValue);
 
-        short shortMin = short.MinValue;
-        short shortMax = short.MaxValue;
-        Console.WriteLine(shortMin);
-        Console.WriteLine(shortMax);
+        Console.WriteLine(short.MinValue);
+        Console.WriteLine(short.MaxValue);
 
-        ushort ushortMin = ushort.MinValue;
-        ushort ushortMax = ushort.MaxValue;
-        Console.WriteLine(ushortMin);
-        Console.WriteLine(ushortMax);
+        Console.WriteLine(ushort.MinValue);
+        Console.WriteLine(ushort.MaxValue);
 
-        int intMin = int.MinValue;
-        int intMax = int.MaxValue;
-        Console.WriteLine(intMin);
-        Console.WriteLine(intMax);
+        Console.WriteLine(int.MinValue);
+        Console.WriteLine(int.MaxValue);
 
-        uint uintMin = uint.MinValue;
-        uint uintMax = uint.MaxValue;
-        Console.WriteLine(uintMin);
-        Console.WriteLine(uintMax);
+        Console.WriteLine(uint.MinValue);
+        Console.WriteLine(uint.MaxValue);
 
-        long longMin = long.MinValue;
-        long longMax = long.MaxValue;
-        Console.WriteLine(longMin);
-        Console.WriteLine(longMax);
+        Console.WriteLine(long.MinValue);
+        Console.WriteLine(long.MaxValue);
 
-        ulong ulongMin = ulong.MinValue;
-        ulong ulongMax = ulong.MaxValue;
-        Console.WriteLine(ulongMin);
-        Console.WriteLine(ulongMax);
+        Console.WriteLine(ulong.MinValue);
+        Console.WriteLine(ulong.MaxValue);
 
         // Variáveis de ponto flutuante
-        float floatMin = float.MinValue;
-        float floatMax = float.MaxValue;
-        Console.WriteLine(floatMin);
-        Console.WriteLine(floatMax);
+        Console.WriteLine(float.MinValue);
+        Console.WriteLine(float.MaxValue);
 
-        double doubleMin = double.MinValue;
-        double doubleMax = double.MaxValue;
-        Console.WriteLine(doubleMin);
-        Console.WriteLine(doubleMax);
+        Console.WriteLine(double.MinValue);
+        Console.WriteLine(double.MaxValue);
 
-        decimal decimalMin = decimal.MinValue;
-        decimal decimalMax = decimal.MaxValue;
-        Console.WriteLine(decimalMin);
-        Console.WriteLine(decimalMax);
+        Console.WriteLine(decimal.MinValue);
+        Console.WriteLine(decimal.MaxValue);
+
+        Console.WriteLine(1.2/0);
+        Console.WriteLine(-1.2/0);
+        Console.WriteLine(0.0/0.0);
         }
     }
 }
