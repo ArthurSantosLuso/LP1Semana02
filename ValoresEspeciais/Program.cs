@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 
 namespace ValoresEspeciais
 {
@@ -44,6 +45,13 @@ namespace ValoresEspeciais
         Console.WriteLine(1.2/0);
         Console.WriteLine(-1.2/0);
         Console.WriteLine(0.0/0.0);
+
+        // Declarar um var com o valor maximo do tipo unit
+        uint a = uint.MaxValue;
+
+        //Imprimir o resultado do overflow do tipo unit
+        Console.WriteLine(a + 1);
+
         }
     }
 }
